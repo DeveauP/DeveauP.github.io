@@ -32,7 +32,6 @@ strong {
 a {
 	color: #171717;
 }
-
 a:hover {
 	text-decoration: none;
 }
@@ -212,7 +211,6 @@ hr {
 }
 
 .container {
-	width: 1200px;
 	margin: 0px auto;
 }
 
