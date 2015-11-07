@@ -6,20 +6,18 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Paul Deveau</title>
             <meta name="description" content="Personal webpage">
-           <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/default.css">
             <link rel="stylesheet" href="css/fonts.css">
-
-
         </head>
         <body>
-        <div class="jumbotron">
-            <div class="title" id="header">
-            <h2>Paul Deveau</h2>
-            <h3> PhD Student at Curie Institute </h3>
+            <div class="container" id="header-wrapper">
+              <div class="title" id="header">
+                <h2>Paul Deveau</h2>
+                <h2 style="color:white"> PhD Student at Curie Institute </h2>
+              </div>
             </div>
-        <div class="container" id="banner">
-        </div>
+
         <div class="menu">
             <div class="a" id="menu-wrapper">
             <ul  class="nav nav-pills">
@@ -35,10 +33,12 @@
 		</ul>
         </div>
         </div>
+      <div class="jumbotron">
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="Home">
+          <div class="container" id="portfolio">
           <p>  I am a 2nd year PhD student in bioinformatics, working on clonal evolution in neuroblastoma, under the supervision of Olivier DELATTRE and Gudrun SCHLEIERMACHER at U830 and Valentina BOEVA at U900.
-              I graduated from the Ecole Polytechnique in 2014, and obtained a master's degree in Molecular and Cellular Biotherapies from Université Paris Descartes the same year. 
+              I graduated from the Ecole Polytechnique in 2014, and obtained a master's degree in Molecular and Cellular Biotherapies from Université Paris Descartes the same year.
 			  I have always enjoyed interdisciplinary work, which lead me to different topics such as quality control for <a href="fr.simone-perele.com/">Simone PERELE </a>, <a href="http://www.gendarmerie.interieur.gouv.fr/cegn/Autres-pages/Centres/Centre-national-d-instruction-nautique-de-la-gendarmerie-CNING"> scuba-diving gear handling </a>,
 			  <href a="http://www.stowers.org/"> DNA recombination in the middle of Missouri </a>, <href a="https://www.hgid.org/">Human genetics in immunology</a>, and finally <a href="http://curie.fr/">programming and data analysis </a>
               After some work in experimental biology at Stowers's Institute and Imagine Institute, I switched to the world of computer sciences.
@@ -47,9 +47,13 @@
                 However, I did not forget all of my previous work, and put it to good use, by teaching molecular and cellular biology at Université Paris Sud (1st year of Bachelor degree).
           </p>
 				</div>
+      </div>
 				<div class="tab-pane" id="PhD_projects">
+          <div class="container" id="portfolio">
+
           <p>
-          My work has focused so far on reconstructing clonal populations from whole genome sequencing data. This has lead me to develop QuantumClone, which aims to reconstruct clonal populations by statistical inference.
+          My work has focused so far on reconstructing clonal populations from whole genome sequencing data. This has lead me to develop QuantumClone,
+          which aims to reconstruct clonal populations by statistical inference.
            I have also been interested in how to select the best variants to do the clustering.
         </p>
           <h2>
@@ -65,46 +69,54 @@
 				</p>
 				</li>
 			</ul>
-			<p> I have presented QuantumClone and its applications at ISMB/ECCB 2015 in Dublin: an oral presentation at HitSeq, and a <a href="http://f1000research.com/posters/4-459"> poster </a> both at HitSeq and ISMB</p> 
+			<p> I have presented QuantumClone and its applications at ISMB/ECCB 2015 in Dublin: an oral presentation at HitSeq, and a <a href="http://f1000research.com/posters/4-459"> poster </a> both at HitSeq and ISMB</p>
 				</div>
+      </div>
         <div class="tab-pane" id="Teaching_material">
+          <div class="container" id="portfolio">
+
                 <p>You can find here some materials for teaching, in French. A translation can be made if asked.</p>
-                <p> Cette section est en français, et est principalement destinée aux élèves de L1BCST de l'Université Paris Sud. Le but étant de donner ici des compléments de cours, ou de répondre à des questions de manière plus complète que lors des TP/TDs </p>
-                <p>
+                <p> Cette section est en français, et est principalement destinée aux élèves de L1BCST de l'Université Paris Sud. Le but étant de donner ici des compléments de cours,
+                   ou de répondre à des questions de manière plus complète que lors des TP/TDs </p>
 				<ul>
-                  <li>  Exemples de compte rendu
+
+                  <div class="container" id="column1">
+                    <h2>Exemples de compte rendu</h2>
                     <ul>
                       <li> <a href="http://deveaup.github.io/Compte_TP_word.pdf"> Pdf généré par Word </a> </li>
                       <li><a href="http://deveaup.github.io/Compte_rendu.pdf">Pdf généré par LaTeX </a></li>
                     </ul>
-                  </li>
-				 </p>
-                  <li>
-                    <a href="https://deveaup.shinyapps.io/GenerationTime"> Calculer un temps de génération avec R et Shiny </a>
-					<p> Le compte shinyapps ne supporte que 25h d'utilisation par mois, donc cela se fait sur la base du "premier arrivé, premier servi". 
+                  </div>
+
+                  <div class="container" id="column2">
+                    <h2> ShinyApp</h2>
+                    <p>
+                    <a href="https://deveaup.shinyapps.io/GenerationTime"> Calculer un temps de génération </a> </p>
+					<p> Le compte shinyapps ne supporte que 25h d'utilisation par mois, donc cela se fait sur la base du "premier arrivé, premier servi".
 					Si d'aventure d'autres solutions m'étaient proposées, je suis prêt à fournir gracieusement le code R permettant de générer la page. </p>
-                  </li>
+                  </div>
+                </div>
       	</div>
           <div class="tab-pane" id="Resume">
+            <div class="container" id="portfolio">
             <p>
-            A good approximation of my resume can be found on my <a href="https://fr.linkedin.com/in/deveaupaul/en"> LinkedIn profile</a>, 
-			do not hesitate to contact me for my full curriculum.
-			
-			I currently am interested in data analysis, and I mainly deal with genomic data. I switched from the wet lab to full-time computer programming between my master's degree and my PhD.
-			
-			
+            As a a good approximation of my resume can be found on my <a href="https://fr.linkedin.com/in/deveaupaul/en"> LinkedIn profile</a>,
+			I mainly use this website to show non-academic skills such as teaching material, basic html/css programming, and advertise the latest releases of R packages.
+
+			I currently am interested in data analysis, and I mainly deal with genomic data - i.e. looking for the hypothetic needle in a thousand haystack. I switched
+      from the wet lab to full-time computer programming between my master's degree and my PhD, but do not plan on going back to the bench except for giving classes.
+
+
           </p>
+        </div>
+
         </div>
 			</div>
             </div>
-            <div class="container" id="footer-wrapper">
-                <div class="container" id="footer">
-                    <a href="mailto:paul.deveau@curie.fr" style="color:white">Contact me</a>
-					<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/deveaupaul" data-format="hover" data-related="false"></script>
+            <div class="container" id="footer">
+                    Contact me by <a href="mailto:paul.deveau@curie.fr" style="color:white"> mail </a> or with <a href="https://fr.linkedin.com/in/deveaupaul/en" style="color:white">LinkedIn</a>
 
-                </div>
-            </div>
+          </div>
         </body>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
