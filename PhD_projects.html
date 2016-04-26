@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+       <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Paul Deveau</title>
+            <meta property="og:type" content="website" />
+            <meta name="description" content="Personal webpage of Paul Deveau, PhD student at Institut Curie. This website also hosts teaching material in biology and bioinformatics.">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/default.css">
+            <link rel="stylesheet" href="css/fonts.css">
+
+        </head>
+        <body>
+            <div class="container" id="header-wrapper">
+              <div class="title" id="header">
+                <h2>Paul Deveau</h2>
+                <h2 style="color:white"> PhD Student at Curie Institute </h2>
+              </div>
+            </div>
+
+        <div class="menu">
+            <div class="a" id="menu-wrapper">
+            <ul  class="nav nav-pills">
+			<li>
+			<a  href="index.html#Home">Home</a>
+			</li>
+			<li><a href="index.html#Resume" >Resume</a>
+			</li>
+			<li class="active"><a data-toggle="tab">PhD Projects</a>
+			</li>
+  		<li><a href="Teaching.html">Teaching material</a>
+			</li>
+      <li><a href="index.html#Photography">Photography</a>
+		</ul>
+        </div>
+        </div>
+      <div class="jumbotron">
+			<div class="tab-content clearfix">
+			  <div class="tab-pane" id="Home"></div>
+			  <div class="tab-pane active" id="PhD_projects">
+          <div class="container" id="portfolio">
+
+          <p>
+          My work has focused so far on reconstructing clonal populations from whole genome sequencing data. This has lead me to develop QuantumClone,
+          which aims to reconstruct clonal populations by statistical inference.
+           I have also been interested in how to select the best variants to do the clustering.
+        </p>
+        <h2>
+          Presentations
+        </h2>
+        <div id="map"></div>
+        <!-- google map script -->
+
+        <script src="js/gmap.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsaq_qLXz8iga65BxMOc5CVzMsnpdS3ZU&signed_in=false&callback=initMap"
+          async defer></script>
+		<br>
+		
+          <h2>
+            R packages :
+          </h2>
+            <ul>
+                <li><p> QuantumClone <br>
+				Can be found either on <a href="https://cran.r-project.org/web/packages/QuantumClone/index.html">CRAN </a> or on
+        <a href="https://github.com/DeveauP/QuantumClone/" >GitHub </a>
+                </p>
+				</li>
+				<li> <p>ACSNMineR <br>
+				Can also be found on <a href="https://cran.r-project.org/web/packages/ACSNMineR/index.html">CRAN</a> or <a href="https://github.com/sysbio-curie/ACSNMineR" > GitHub</a>
+				</p>
+				</li>
+			</ul>
+			<p> I have presented QuantumClone and its applications at ISMB/ECCB 2015 in Dublin: an oral presentation at HitSeq, and a <a href="http://f1000research.com/posters/4-459" > poster </a> both at HitSeq and ISMB</p>
+				</div>
+			</div>
+          <div class="tab-pane" id="Resume">
+        </div>
+        <div class="tab-pane" id="Photography">
+        </div>
+		</div>
+            </div>
+            <div class="container" id="footer">
+                    Contact me by
+                    <span title="E-mail">
+                        <a href="mailto:paul.deveau@curie.fr" style="color:white"> mail </a>
+                      </span>, by
+                    <span title="My LinkedIn profile">
+                    <a href="https://fr.linkedin.com/in/deveaupaul/en" style="color:white"=>LinkedIn
+                      <img src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo-in-win8-tile-144_v1.png" style="width:30px"> </a>
+                    </span>,
+                    or check my work on
+                    <span title="Follow me on github">
+                    <a href="https://github.com/DeveauP/" style="color:white">
+                      Github.
+                      <img src="https://github.com/fluidicon.png" style="width:30px">
+                    </a>
+                  </span>
+          </div>
+        </body>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</html>
