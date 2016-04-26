@@ -13,7 +13,9 @@ var locations = [
 		function initMap() {
 			map = new google.maps.Map(document.getElementById('map'), {
 			  center: {lat: 48.8566140, lng: 2.3522219},
-              zoom: 1
+              zoom: 1,
+			  disableDefaultUI: true
+
             });
 
 			for (i = 0; i < locations.length; i++) {
@@ -31,6 +33,7 @@ var locations = [
 				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 				map: map,
 				title: locations[i][3]
+				
 				//click: return function() {
 				//		infowindow.setContent(locations[i][0]);
 				//		infowindow.open(map, marker);
