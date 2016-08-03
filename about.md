@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
+#Welcome!
 
 I am a 2nd year PhD student in bioinformatics, working on clonal evolution in neuroblastoma, under the supervision of Olivier DELATTRE and Gudrun SCHLEIERMACHER at U830 and Valentina BOEVA at U900.
 I graduated from the Ecole Polytechnique in 2014, and obtained a master's degree in Molecular and Cellular Biotherapies from Université Paris Descartes the same year.
