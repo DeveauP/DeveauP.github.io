@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-#Welcome!
+# Welcome!
 
 I am a 2nd year PhD student in bioinformatics, working on clonal evolution in neuroblastoma, under the supervision of Olivier DELATTRE and Gudrun SCHLEIERMACHER at U830 and Valentina BOEVA at U900.
 I graduated from the Ecole Polytechnique in 2014, and obtained a master's degree in Molecular and Cellular Biotherapies from Université Paris Descartes the same year.
@@ -19,4 +19,7 @@ After some work in experimental biology at Stowers's Institute and Imagine Insti
 However, I did not forget all of my previous work, and put it to good use, by teaching molecular and cellular biology at Université Paris Sud (first and secong year of Bachelor degree).
 
 ### Contact me
-[paul.deveau@curie.fr](mailto:paul.deveau@curie.fr)
+You can email me at:
+[paul.deveau at curie.fr](mailto:paul.deveau@curie.fr)
+
+Or you can just click on any icon below (mail, LinkedIn, StackOverflow are ways to reach me).
