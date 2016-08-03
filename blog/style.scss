@@ -4,8 +4,8 @@
 //
 // IMPORTS
 //
-@import "sass/reset",
-		"sass/variables";
+import url(_sass/_reset.scss);
+import url(_sass/_variables.scss);
 
 
 // Syntax highlighting @import is at the bottom of this file
