@@ -4,10 +4,10 @@
 //
 // IMPORTS
 //
-@import "sass/*";
-//@import url(/_sass/_variables.scss);
-//@import url(/_sass/_highlights.scss);
-//@import url(/_sass/_svg-icons.scss);
+@import "_sass/_reset",
+		"_sass/_variables",
+		"_sass/_highlights",
+		"_sass/_svg-icons";
 
 // Syntax highlighting @import is at the bottom of this file
 
