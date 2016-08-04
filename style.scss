@@ -152,12 +152,13 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: #1E1B1A;
 }
 
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
+  background-color: #1E1B1A;
   @include mobile {
     text-align: center;
   }
@@ -192,7 +193,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $lightGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +203,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $lightGray;
   font-size: 16px;
 
   @include mobile {
