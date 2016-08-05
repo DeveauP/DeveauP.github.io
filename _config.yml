@@ -32,7 +32,7 @@ google_analytics: UA-81847941-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-source: "blog/"
+
 destination: "blog/"
 url: http://deveaup.github.io/
 
