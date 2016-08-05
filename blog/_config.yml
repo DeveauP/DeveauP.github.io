@@ -50,6 +50,10 @@ permalink: /:title/
 version: v1.2.0
 excerpt_separator: <!--more-->
 
+# Test with source
+source: blog/
+destination: blog/
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
@@ -63,7 +67,6 @@ kramdown:
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
-  sass_dir: blog/_sass
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
