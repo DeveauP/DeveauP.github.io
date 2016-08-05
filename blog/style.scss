@@ -1,11 +1,11 @@
 ---
 ---
-$project-path: absolute-path("/blog/");
+
 //
 // IMPORTS
 //
-@import "reset",
-		"variables";
+@import "/blog/reset",
+		"/blog/variables";
 
 // Syntax highlighting @import is at the bottom of this file
 
