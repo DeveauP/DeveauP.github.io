@@ -110,14 +110,15 @@ img {
   max-width: 100%;
 }
 
-img[alt$="-halfwidth"]{ 
-  width:  50%; 
+img[alt$="-forcehalfwidth"]{ 
+  max-width:  480px;  
   float: center;
   display: block;
 }
 
-img[alt$="-fullwidth"]{ 
-  width:  100%; 
+img[alt$="-halfwidth"]{ 
+  max-width:  50%;  
+  float: center;
   display: block;
 }
 
