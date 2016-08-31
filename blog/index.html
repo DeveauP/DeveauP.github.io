@@ -13,7 +13,7 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}/../{{ post.url }}" class="read-more">Read More</a>
-	  {% for tags in page.tags %}
+	  {% for tags in post.tags %}
 		<post-tag>{{ tags }}</post-tag>
 	  {% endfor %}
     </article>
