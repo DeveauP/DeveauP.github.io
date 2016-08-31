@@ -77,6 +77,19 @@ a {
   }
 }
 
+post-tag {
+    color: #3E6D8E;
+    background-color: #E0EAF1;
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+    padding: 3px 4px 3px 4px;
+    margin: 2px 2px 2px 0;
+    text-decoration: none;
+    font-size: 90%;
+    line-height: 2.4;
+    white-space: nowrap;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -108,6 +121,18 @@ strong, b {
 
 img {
   max-width: 100%;
+  margin: 0 auto;
+  display: block
+}
+
+img[alt$="-forcehalfwidth"]{ 
+  max-width:  480px;  
+  display: block;
+}
+
+img[alt$="-halfwidth"]{ 
+  max-width:  50%;  
+  display: block;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -283,6 +308,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
