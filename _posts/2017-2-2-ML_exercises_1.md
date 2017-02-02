@@ -149,7 +149,9 @@ prediction2<-predict(logistic2,test[,-ncol(test)],type="resp")
 correct2<- sum(as.integer(prediction2 >0.5) == test$Y)/length(prediction2)
 ```
 
-We now have 0.8717% correct guesses... so our model improved marginally, but we only trained on a single variable! We could also play with the threshold to improve our predictor. \* To answer question 1 : only column e seems to play a role in the prediction.* * Answer 2:\* Overfitting is when the model is too close to the training data (learning on the noise for example).
+We now have 0.8717% correct guesses... so our model improved marginally, but we only trained on a single variable! We could also play with the threshold to improve our predictor. 
+** To answer question 1 : only column e seems to play a role in the prediction.** 
+** Answer 2:** Overfitting is when the model is too close to the training data (learning on the noise for example).
 
 Answering question 3 is now pretty straightforward, construct a data frame with colomn name e, and
 
