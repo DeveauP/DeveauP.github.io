@@ -14,10 +14,14 @@ tags:
 Background
 ----------
 
-In this post I'll solve (exercise 1)\[<https://github.com/DeveauP/ML_quizz/tree/master/1_FeatureExtraction>\], with R, as I would do for a Kaggle.
+In this post I'll solve [exercise 1](https://github.com/DeveauP/ML_quizz/tree/master/1_FeatureExtraction), with R,
+as I would do for a Kaggle.
 
 <!--more-->
-I started the (ML\_quizz)\[<https://github.com/DeveauP/ML_quizz/>\] repository to help with intern selections in a machine learning team (outside of academia). Some answers are available already inside the repository, but I wanted something much more detailed and that could serve as a guide whatever your background in R/machine learning.
+
+I started the [ML_quizz](https://github.com/DeveauP/ML_quizz/) repository to help with intern selections in a machine 
+learning team (outside of academia). Some answers are available already inside the repository, but I wanted something much
+more detailed and that could serve as a guide whatever your background in R/machine learning.
 
 Data exploration
 ----------------
