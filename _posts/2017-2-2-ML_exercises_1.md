@@ -1,3 +1,16 @@
+---
+title: 'Machine learning exercise 1 - solution'
+author: Paul Deveau
+layout: post
+category:
+  - Machine learning
+description: Solution to MLQuizz 1
+tags:
+ - R
+ - Feature selection
+ - Logistic regression
+---
+
 Background
 ----------
 
