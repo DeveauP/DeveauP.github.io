@@ -60,7 +60,8 @@ When you have to predict a categorical variable or a state, a good place to star
 Sample split
 ------------
 
-To make sure that we are not overfitting the data, we need to divide the data into a training set and a testing set. Some functions exist in `caret` or `scikit-learn` in python to do this. But for the sake of the explanation, I will do this manually. I will sample 70% of the dataset for training, and will test on the remaining 30%.
+To make sure that we are not overfitting the data, we need to divide the data into a training set and a testing set. 
+Some functions exist in `caret` (or `scikit-learn` in python) to do this. But for the sake of the explanation, I will do this manually. I will sample 70% of the dataset for training, and will test on the remaining 30%.
 
 ``` r
 SplitTrain<-sample(x = 1:nrow(dataset1),size = round(nrow(dataset1)*0.7),replace = FALSE)
@@ -150,8 +151,10 @@ correct2<- sum(as.integer(prediction2 >0.5) == test$Y)/length(prediction2)
 ```
 
 We now have 0.8717% correct guesses... so our model improved marginally, but we only trained on a single variable! We could also play with the threshold to improve our predictor. 
-** To answer question 1 : only column e seems to play a role in the prediction.** 
-** Answer 2:** Overfitting is when the model is too close to the training data (learning on the noise for example).
+
+__To answer question 1 : only column "e" seems to play a role in the prediction.__ 
+
+__Answer 2:__ Overfitting is when the model is too close to the training data (learning on the noise for example).
 
 Answering question 3 is now pretty straightforward, construct a data frame with colomn name e, and
 
