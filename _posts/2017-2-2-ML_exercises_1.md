@@ -11,7 +11,7 @@ tags:
  - Logistic regression
 ---
 
-Background
+## Background
 ----------
 
 In this post I'll solve [exercise 1](https://github.com/DeveauP/ML_quizz/tree/master/1_FeatureExtraction), with R,
@@ -23,7 +23,7 @@ I started the [ML_quizz](https://github.com/DeveauP/ML_quizz/) repository to hel
 learning team (outside of academia). Some answers are available already inside the repository, but I wanted something much
 more detailed and that could serve as a guide whatever your background in R/machine learning.
 
-Data exploration
+## Data exploration
 ----------------
 
 First we load the data:
