@@ -7,7 +7,7 @@ body {
 	padding: 0px;
 	background: #333333;
 	font-family: 'Muli', sans-serif;
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: 300;
 	color: #363636;
 }
@@ -295,7 +295,7 @@ hr {
 	{
 		letter-spacing: 0.20em;
 		font-weight: 700;
-		font-size: 2em;
+		font-size: 1.8em;
 		color: #00AABB;
 	}
 
@@ -367,7 +367,7 @@ hr {
 	#logo h1
 	{
 		letter-spacing: 0.10em;
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	#logo p
