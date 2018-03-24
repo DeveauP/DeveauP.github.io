@@ -1,262 +1,166 @@
 <!DOCTYPE html>
 <html>
 
-       <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Paul Deveau</title>
-            <meta property="og:type" content="website" />
-            <meta name="description" content="Personal webpage of Paul Deveau, PhD student at Institut Curie. This website also hosts teaching material in biology and bioinformatics.">
-            <link rel="stylesheet" href="css/bootstrap.min.css">
-            <link rel="stylesheet" href="css/default.css">
-            <link rel="stylesheet" href="css/fonts.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Paul Deveau</title>
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Personnal webpage of Paul Deveau,PhD">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/fonts.css">
 
-        </head>
-        <body>
-            <div class="container" id="header-wrapper">
-              <div class="title" id="header">
-                <h2>Paul Deveau</h2>
-                <h2 style="color:white"> PhD Student at Curie Institute </h2>
-              </div>
-            </div>
+</head>
 
-        <div class="menu">
-            <div class="a" id="menu-wrapper">
-            <ul  class="nav nav-pills">
-			<li class="active">
-			<a  href="#Home" data-toggle="tab">Home</a>
-			</li>
-			<li><a href="#Resume" data-toggle="tab">Resume</a>
-			</li>
-			<li><a href="PhD_projects.html">PhD Projects</a>
-			</li>
-  		<li><a href="Teaching.html">Teaching material</a>
-			</li>
-      <li><a href="#Photography" data-toggle="tab">Photography</a>
- 		<li><a href="blog/index.html">Blog</a></li>
+<body>
+  <div class="container" id="header-wrapper">
+    <div class="title" id="header">
+      <h2>Paul Deveau, PhD</h2>
+      <h2 style="color:white">Data scientist at Quinten</h2>
+    </div>
+  </div>
 
-		</ul>
+  <div class="menu">
+    <div class="a" id="menu-wrapper">
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#Home" data-toggle="tab"><b>Home</b></a>
+        </li>
+        <li><a href="#Resume" data-toggle="tab"><b>Resume</b></a>
+        </li>
+        <li><a href="blog/index.html"><b>Blog</b></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container" id="wrapper">
+      <div class="tab-content">
+        <div class="tab-pane active fade in" id="Home">
+          <p> Welcome to my personnal webpage. </p>
+          <p> You can find my resume, publications, and a link to my blog with code related posts.</p>
         </div>
-        </div>
-      <div class="jumbotron">
-			<div class="tab-content clearfix">
-			  <div class="tab-pane active" id="Home">
-          <div class="container" id="portfolio">
-          <p>  I am a 3rd year PhD student in bioinformatics, working on clonal evolution in neuroblastoma, under the supervision of Olivier DELATTRE and Gudrun SCHLEIERMACHER at U830 and Valentina BOEVA at U900.
-              I graduated from the Ecole Polytechnique in 2014, and obtained a master's degree in Molecular and Cellular Biotherapies from Université Paris Descartes the same year.
-			  I have always enjoyed interdisciplinary work, which lead me to different topics such as quality control for <a href="http://fr.simone-perele.com/" >Simone PERELE </a>,
-        <a href="http://www.gendarmerie.interieur.gouv.fr/cegn/Autres-pages/Centres/Centre-national-d-instruction-nautique-de-la-gendarmerie-CNING" > scuba-diving gear handling </a>,
-			  <a href="http://www.stowers.org/" > DNA recombination in the middle of Missouri </a>, <a href="https://www.hgid.org/">Human genetics in immunology</a>,
-        and finally <a href="http://curie.fr/">programming and data analysis </a>
-              After some work in experimental biology at Stowers's Institute and Imagine Institute, I switched to the world of computer sciences.
-            </p>
-            <p>
-                However, I did not forget all of my previous work, and put it to good use, by teaching molecular and cellular biology at Université Paris Sud (1st and 2nd year of Bachelor degree).
-          </p>
-				</div>
-      </div>
-				<div class="tab-pane" id="PhD_projects">
-				</div>
-          <div class="tab-pane" id="Resume">
-            <div class="container" id="portfolio">
-            <p>
-          I currently am interested in data analysis, and I mainly deal with genomic data. I switched
-      from the wet lab to full-time computer programming between my master's degree and my PhD, but
-      I sometimes get back to the bench when giving classes at Université Paris Sud (Orsay).
-
-          </p>
-          <hr>
-            <p>
-              <div id="content_left">
-              <div class="container">
-                  <br>
-                  <a name="Exp"></a>
-                  <h2> Professional experience </h2>
-                  <br>
-                  <h3> <strong> Sept. 2014 - Now : PhD Student at Institut Curie, Paris, FRANCE </strong> <h3>
-                  <br>
-                  <p> Supervised by V. BOEVA, O. DELATTRE and G. SCHLEIERMACHER </p>
-                  <p> Studying clonal heterogeneity -i.e. the different populations co-existing in a tumor - in neuroblastoma, the most common solid extra-cranial cancer of childhood.
-                  Developped packages to:
-                  <ul>
-                      <li> Reconstruct the different populations based on copy number alterations and variant allele frequencies of single nucleotide variants: 
-					  <a href="https://github.com/DeveauP/QuantumClone"> QuantumClone</a>. Associated publication: Deveau et al,<a href="http://biorxiv.org/content/early/2016/05/19/054346">Clonal assessment of functional variants in cancer based
-on a genotype-aware method for clonal reconstruction</a>, under review </li>
-                      <br>
-                      <li> Facilitate computation of over-representation of pathways based on biological networks: 
-					  <a href="https://github.com/sysbio-curie/ACSNMineR">ACSNMineR</a>. 
-					  Associated publication: Deveau et al, <a href="http://biorxiv.org/content/early/2016/07/22/064469">Calculating biological module enrichment or depletion and visualizing data on 
-					  large-scale molecular maps with ACSNMineR and RNaviCell R packages</a>, The R Journal,2016 </li>
-                  </ul>
-                  </p>
-                  <br>
-                  <h3> <strong> Sept. 2013 - June 2014 : Intern at Institut Imagine, Paris, FRANCE </strong> <h3>
-                  <p> Supervised by J. BUSTAMANTE </p>
-                  <p> Identification and preliminary work of characterization of a disease causing variant, unit of susceptibility to mycobacterial infections.</p>
-                  <p>
-                    Combined immunological knowledge and experimental genetics to confirm mutations detected by Whole Exome Sequencing, and predict its function.
-                  </p>
-				  <p>
-				  Associated publication: Kreins et al, <a href="http://jem.rupress.org/content/212/10/1641.long">Human TYK2 deficiency: Mycobacterial and viral infections without hyper-IgE syndrome</a>, J Exp Med, 2015
-                  </p>
-				  <br>
-                  <h3> <strong> April. 2012 - August 2012 : Intern at Stowers Institute, Kansas City, MO, USA </strong> <h3>
-                  <p> Supervised by P. QIAN, laboratory of Linheng LI </p>
-                  <p> Creation of a BAC-Clone for homologous recombination.</p>
-                  <p>
-                    The aim of the internship was to create a bacterial artificial chromosome (BAC)
-                    that could express a cluster of miRNAs at will (TetOn promoter), that could be used for homologous recombination in mouse ES cells.
-                  </p>
-                  <p>
-                  <h3> <strong> Previous experiences </strong> <h3>
-                  <p> Previous experiences include an internship at Simone Pérèle and a leadership training in the French forces as part of the school curriculum. </p>
-
-                  <br>   <hr>    <br>
-                  <a name="Ed" ></a>
-                  <h2> Education </h2>
-                  <br>
-                  <h3> <strong> 2014 : Masters degree from Ecole Polytechnique, Palaiseau, FRANCE </strong> <h3>
-                  <p> Specialty : "Biologie aux interfaces"/ "Frontier biology"</p>
-                  <br>
-                  <h3> <strong> 2014 : Masters degree from Université Descartes, Paris, FRANCE </strong> <h3>
-                  <p> Title : "BioMedical Engineering"</p>
-                  <p> Specialty : "Molecular and Cellular Biotherapies" </p>
-                  <br>
-                  <h3> <strong> 2013 : Engineering degree from Ecole Polytechnique, Palaiseau, FRANCE </strong> <h3>
-                  <br>
-                  <h3> <strong> 2012 : Bachelor degree from Ecole Polytechnique, Palaiseau, FRANCE </strong> <h3>
-
-                  <br>   <hr>    <br>
-                  <a name="Interests" ></a>
-                  <h2> Outside interests </h2>
-                  <br>
-                  <h3> <strong> Photography </strong> <h3>
-                  <br>
-                  <p>
+        <div class="tab-pane fade" id="Resume">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-9 col-sm12">
+                <br>
+                <h3>Professional experience</h3>
+                <br>
+                <ul>
+                  <li><b>Data Scientist Consultant</b>, Quinten, <em>September 2017 - </em></li>
                     <ul>
-                      <li> Member of the photography association at the Ecole Polytechnique and photograph for school events such as the "Tournoi Sportif des Grandes Ecoles de la Défense" (2012) and the "Point Gamma" (2012)
-                      </li>
-                      <li> Photograph for the school yearbook of the Ecole Polytechnique (2013)
-                      </li>
+                      <li>Technical expert on machine learning;</li>
+                      <li>Consulting missions include analyses for pharmaceutical companies and digital coaching;</li>
+                      <li>Mentoring a PhD student;</li>
+                      <li>Involved in the recruiting process.</li>
                     </ul>
-                  </p>
                   <br>
-                  <h3> <strong> Music </strong> <h3>
-                  <br>
-                  <p> Playing guitare for eight years and rock enthusiast. </p>
+                  <li><b>PhD Candidate</b>, Institut Curie,<em>September 2014 - June 2017</em></li>
+                    Subject: <em>Clonal evolution in neuroblastoma</em>
+                  <ul>
+                    <li>Analysis of whole genome sequences (40TB of fat-data);</li>
+                    <li>Development of a clustering algorithm, <a href="https://github.com/DeveauP/QuantumClone"><b>QuantumClone</b></a>,
+                       associated publication: <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty016/4802225"><em>QuantumClone: clonal assessment of functional mutations in cancer based on a genotype-aware method for clonal reconstruction </em></a>;</li>
+                    <li>Development of a statistical enrichment library <a href="https://github.com/sysbio-curie/ACSNMineR"><b>ACSNMineR</b></a>, associated publication <a href="https://journal.r-project.org/archive/2016/RJ-2016-047/index.html"><em></em></a>;</li>
+                    <li>Teaching biology, bachelor level at Université d'Orsay</li>
+                    <li>Participation to conferences: oral talks at ANR2016, HitSeq2015 and ABS4NGS2015; poster presentations at ISMB2015.</li>
+                  </ul>
                   <br>
 
-                  <h3> <strong> Sports </strong> <h3>
-                  <p> Rugby player at the Ecole Polytechnique and former treasurer of the rugby team (XV de l'X) </p>
-                  <p> Snowboarding </p>
-              </div>
-            </div>
-              <div id="sidebar_right">
-                <div class="box2">
-                  <div class="title">
-                    <br>
-                    <h2 style="color:black">Skills</h2>
-                    <h4>Programming</h4>
-                    <div class="meter blue">
-                      <span style="width: 99%"><span>R</span></span>
-                    </div>
-                    <div class="meter sunflower">
-                      <span style="width: 80%"><span>Python</span></span>
-                    </div>
-                    <div class="meter wisteria">
-                      <span style="width: 95%"><span>Machine learning</span></span>
-                    </div>
-                    <div class="meter midnight">
-                      <span style="width: 50%"><span>html/CSS</span></span>
-                    </div>
-					<div class="meter asbestos">
-                      <span style="width: 70%"><span>Bash</span></span>
-                    </div>
-                    <br>
-                    <h4>Genomic</h4>
-                    <div class="meter carrot">
-                      <span style="width: 90%"><span>Variant calling</span></span>
-                    </div>
-                    <div class="meter pomengrate">
-                      <span style="width: 75%"><span>Sequencing</span></span>
-                    </div>
-                    <br>
-                    <h4>Languages </h4>
-                    <div class="meter blue">
-                      <span style="width: 90%"><span>English</span></span>
-                    </div>
-                    <div class="meter pomengrate">
-                        <span style="width: 35%"><span>Spanish</span></span>
-                      </div>
-                    <div class="meter asbestos">
-                      <span style="width: 100%"><span>French</span></span>
-                    </div>
-                  </div>
-                  <hr>
-                <ul class="style2">
-                <li><a href="#Exp">Professional experience</a></li>
-                <li><a href="#Ed">Education </a></li>
-                <li><a href="#Interests">Interests</a></li>
+                  <li><b>Seasonal lecturer</b>, ESTP, <em>2014</em></li>
+                  Teaching fluid dynamics
+                  <br>
+
+                  <li><b>Intern</b>, Institut Imagine, <em>September 2013 - June 2014</em></li>
+                  Subject: <em>Genetic predisposition to mycobacterial infections</em>, associated publication: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26304966"><em>Human TYK2 deficiency: Mycobacterial and viral infections without hyper-IgE syndrome.</em></a>
+
+                  <br>
+                  <li><b>Intern</b>, Stowers Institute, <em>April 2013 - July 2013</em></li>
+                  Subject: <em>Study of hematopoietic stem cells using an inducible miRNA system.</em>
+
+                  <br>
+                  <li><b>Lycée Camille Claudel</b>, Volunteer teacher, <em>September 2014 - June 2017</em> </li>
+                </ul>
+                <hr>
+              <h3>Education</h3>
+              <br>
+              <ul>
+                <li>PhD in Oncology, <b>Université d'Orsay</b>,<em>2017</em> </li>
+                <li>Masters degree, Interface biology, <b>Ecole Polytechnique</b>,<em>2014</em> </li>
+                <li>Masters degree, BioMedical Engineering, <b> Université Paris Descartes</b>,<em>2014</em> </li>
+                <li>Engineering degree, <b>Ecole Polytechnique</b>,<em>2013</em></li>
               </ul>
               </div>
+
+              <div class="col-md-3 col-sm12">
+                <br>
+                <h3>Skills</h3>
+                <h4>Computer science</h4>
+                <ul>
+                  <li><b>R:</b> Advanced</li>
+                  <li><b>Python:</b> Advanced</li>
+                  <li><b>Bash/Shell:</b> Intermediate</li>
+                  <li><b>JavaScript:</b> Basics</li>
+                  <li><b>Machine learning:</b> Advanced</li>
+                  <li><b>Data visualization:</b> Advanced</li>
+                  <li><b>Continuous integration:</b> Advanced</li>
+                </ul>
+                <br>
+                <h4>Languages</h4>
+                <ul>
+                  <li><b>French:</b> Native</li>
+                  <li><b>English:</b> Fluent</li>
+                  <li><b>Spanish:</b> Intermediate</li>
+                </ul>
               </div>
-            </p>
-        </div>
-
-        </div>
-        <div class="tab-pane" id="Photography">
-            <div class="container" id="portfolio2">
-            <p>
-              I have been doing some photography for student associations at Ecole Polytechnique and still practice it when I have time. Below are some examples of what I did.
-            </p>
-            <br>
-            <br>
-                <img src="images/TSGED-26.jpg" alt="TSGED" style="width:250px">
-                <img src="images/Jumping-30.jpg" alt="Jumping" style="width:250px">
-                <img src="images/IMG_5287.jpg" alt="TimeSquare2011" style="width:250px">
-
             </div>
+          </div>
         </div>
-			</div>
-            </div>
-            <div class="container" id="footer">
-                    Contact me by
-                    <span title="E-mail">
-                        <a href="mailto:paul.deveau@curie.fr" style="color:white"> mail </a>
-                      </span>, by
-                    <span title="My LinkedIn profile">
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="footer">
+    Contact me by
+    <span title="My LinkedIn profile">
                     <a href="https://fr.linkedin.com/in/deveaupaul/en" style="color:white"=>LinkedIn
                       <img src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo-in-win8-tile-144_v1.png" style="width:30px"> </a>
-                    </span>,
-                    or check my work on
-                    <span title="Follow me on github">
+                    </span>, or check my work on
+    <span title="Follow me on github">
                     <a href="https://github.com/DeveauP/" style="color:white">
                       Github,
                       <img src="https://github.com/fluidicon.png" style="width:30px">
-					 
+
                     </a>
-                  </span>
-				  or on
-					 <a href="http://stackoverflow.com/users/5779570/deveaup" style="color:white">
+                  </span> or on
+    <a href="http://stackoverflow.com/users/5779570/deveaup" style="color:white">
 					  <span title = "Question and Answers on programming">Stack Overflow </span>
 					<img src="http://stackoverflow.com/users/flair/5779570.png" width="104" height="29" alt="Stack Overflow profile" title="Stack Overflow profile">
 					</a>
-          </div>
-	<!--- Google analytics --->
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  </div>
+  <!--- Google analytics --->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	ga('create', 'UA-81847941-1', 'auto');	
-	ga('send', 'pageview');
-	</script>
-		  </body>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    ga('create', 'UA-81847941-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 
 
 </html>
