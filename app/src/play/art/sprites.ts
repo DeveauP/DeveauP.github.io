@@ -175,8 +175,14 @@ export const itemSheet = (id: ItemId): Sheet => rasterize([ITEM_ART[id].rows], I
 
 /* ---------- PhD cells (13×13) ---------- */
 
-export const CLONE_COLORS = ['#e69f00', '#56b4e9', '#009e73', '#cc79a7'] as const;
-const CLONE_DARK = ['#8a5c00', '#1f6f9c', '#00573f', '#7f3d67'] as const;
+/**
+ * Picked to stay distinct under protanopia, deuteranopia and tritanopia (min ΔE ≈ 44 in
+ * simulation), with a spread of lightness so they also separate in greyscale.
+ */
+export const CLONE_COLORS = ['#ffb000', '#66ccee', '#785ef0', '#882255'] as const;
+const CLONE_DARK = ['#8a5f00', '#1f7a99', '#3a2a99', '#420f28'] as const;
+/** Glyph ink: dark on the light bodies, light on the dark ones. */
+const CLONE_INK = ['#8a5f00', '#1f7a99', '#f0ecff', '#f6d3e4'] as const;
 
 /** Nucleus glyphs so clones are distinguishable without relying on colour. */
 const GLYPHS = [
@@ -207,7 +213,7 @@ export function cellSheet(clone: number): Sheet {
   }
   return rasterize(
     [rows],
-    { b: CLONE_COLORS[clone], r: CLONE_DARK[clone], n: CLONE_DARK[clone], h: '#ffffffaa' },
+    { b: CLONE_COLORS[clone], r: CLONE_DARK[clone], n: CLONE_INK[clone], h: '#ffffffaa' },
     `cell-${clone}`,
   );
 }

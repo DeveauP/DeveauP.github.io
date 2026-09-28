@@ -46,6 +46,7 @@ export function mountPlay(root: HTMLElement): View {
   let dialog: Dialog | null = null;
   let activeStage: StageId | null = null;
   let stuck = false;
+  let rulesHidden = false;
   let sheetOpen = false;
   let toastTimer = 0;
 
@@ -165,18 +166,23 @@ export function mountPlay(root: HTMLElement): View {
       return;
     }
     const st = stageById(activeStage);
-    el.minihead.innerHTML = `
-      <div class="mh-top">
+    const rules = rulesHidden
+      ? ''
+      : `<div class="mh-top">
         <div>
           <p class="mh-kicker">${esc(stageLabel(st))}</p>
           <p class="mh-howto">${esc(t(st.howTo ?? st.story))}</p>
         </div>
-        <button type="button" class="icon-btn" data-act="mg-exit" aria-label="${esc(t(s.exit))}" title="${esc(t(s.exit))}">✕</button>
-      </div>
+        <button type="button" class="icon-btn" data-act="mg-rules" aria-label="${esc(t(s.hideRules))}" title="${esc(t(s.hideRules))}">✕</button>
+      </div>`;
+    el.minihead.innerHTML = `
+      ${rules}
       ${stuck ? `<p class="mh-stuck" role="alert">${esc(t(s.stuck))}</p>` : ''}
       <div class="mh-actions">
+        <button type="button" class="btn btn-ghost" data-act="mg-exit">${icon('arrowLeft', 16)}<span>${esc(t(s.back))}</span></button>
         <button type="button" class="btn btn-soft${stuck ? ' btn-attn' : ''}" data-act="mg-reset">${esc(t(s.reset))}</button>
         <button type="button" class="btn btn-ghost" data-act="mg-skip">${esc(t(s.skip))}</button>
+        ${rulesHidden ? `<button type="button" class="btn btn-ghost mh-rules" data-act="mg-rules">${esc(t(s.showRules))}</button>` : ''}
       </div>`;
   }
 
@@ -343,6 +349,7 @@ export function mountPlay(root: HTMLElement): View {
     el.toast.hidden = true;
     activeStage = id;
     stuck = false;
+    rulesHidden = false;
     renderMinihead();
     renderPrompt();
     renderPanel();
@@ -471,6 +478,10 @@ export function mountPlay(root: HTMLElement): View {
       }
       case 'mg-exit':
         exitStage();
+        break;
+      case 'mg-rules':
+        rulesHidden = !rulesHidden;
+        renderMinihead();
         break;
     }
   };

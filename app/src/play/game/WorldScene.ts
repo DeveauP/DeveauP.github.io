@@ -10,7 +10,7 @@ const WORLD_BOTTOM = GROUND_Y + 40;
 const WORLD_W = 2020;
 const FINISH_X = 1950;
 
-const RUN_SPEED = 95;
+const RUN_SPEED = 124;
 const JUMP_VELOCITY = -300;
 const COYOTE_MS = 90;
 const JUMP_BUFFER_MS = 120;

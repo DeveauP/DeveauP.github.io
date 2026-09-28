@@ -170,6 +170,8 @@ body[data-view='play'] {
   text-overflow: ellipsis;
 }
 .door-prompt kbd {
+  /* Only keyboard + mouse devices get the key hint (see the media query below). */
+  display: none;
   font: 600 11px var(--font-mono);
   padding: 1px 6px;
   border-radius: 4px;
@@ -237,8 +239,15 @@ body[data-view='play'] {
 }
 .mh-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 10px;
+}
+.minihead > .mh-actions:first-child {
+  margin-top: 0;
+}
+.mh-rules {
+  margin-left: auto;
 }
 
 /* ---------- Buttons ---------- */
@@ -512,6 +521,9 @@ body[data-view='play'] {
   }
   .keys-hint {
     display: block;
+  }
+  .door-prompt kbd {
+    display: inline;
   }
   .stage[data-mini] .keys-hint {
     display: none;

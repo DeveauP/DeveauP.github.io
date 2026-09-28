@@ -116,6 +116,8 @@ export class PhdScene extends Phaser.Scene {
   private marks!: Phaser.GameObjects.Graphics;
   private legend!: Phaser.GameObjects.Graphics;
   private legendIcons: Phaser.GameObjects.Image[] = [];
+  /** Faint enlarged clone glyph under each centre cross, so centres don't rely on colour alone. */
+  private centroidIcons: Phaser.GameObjects.Image[] = [];
   private done = false;
   private dragStart: Pt | null = null;
   private offBus: (() => void)[] = [];
@@ -133,6 +135,7 @@ export class PhdScene extends Phaser.Scene {
     board.fillStyle(0xfbfaf6, 1).fillRoundedRect(-4, LEGEND_H - 4, BOARD_W + 8, BOARD_H + 8, 8);
     board.lineStyle(1, 0xd8d2c4, 1).strokeRoundedRect(-4, LEGEND_H - 4, BOARD_W + 8, BOARD_H + 8, 8);
     this.regions = this.add.graphics();
+    this.centroidIcons = CLONE_COLORS.map((_, c) => this.add.image(0, 0, `cell-${c}`).setScale(1.6).setAlpha(0.45));
     this.marks = this.add.graphics().setDepth(5);
     this.legend = this.add.graphics();
 
@@ -223,9 +226,10 @@ export class PhdScene extends Phaser.Scene {
     this.marks.clear();
     // Centroid crosses.
     cents.forEach((c, i) => {
+      this.centroidIcons[i].setPosition(c.x, c.y);
       this.marks.lineStyle(3, 0xffffff, 0.9);
       this.marks.lineBetween(c.x - 5, c.y - 5, c.x + 5, c.y + 5).lineBetween(c.x - 5, c.y + 5, c.x + 5, c.y - 5);
-      this.marks.lineStyle(1.5, colors[i], 1);
+      this.marks.lineStyle(1.5, 0x1b1a2a, 1);
       this.marks.lineBetween(c.x - 5, c.y - 5, c.x + 5, c.y + 5).lineBetween(c.x - 5, c.y + 5, c.x + 5, c.y - 5);
     });
     // Rings around misassigned cells.

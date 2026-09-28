@@ -24,7 +24,7 @@ export class BootScene extends Phaser.Scene {
     for (const outfit of ['polytechnique', 'university'] as const) {
       const key = `player-${outfit}`;
       addSheet(this, key, playerSheet(outfit));
-      this.anims.create({ key: `${key}-run`, frames: this.anims.generateFrameNumbers(key, { frames: [1, 0, 2, 0] }), frameRate: 10, repeat: -1 });
+      this.anims.create({ key: `${key}-run`, frames: this.anims.generateFrameNumbers(key, { frames: [1, 0, 2, 0] }), frameRate: 13, repeat: -1 });
     }
     for (const id of Object.keys(ITEMS) as ItemId[]) addSheet(this, `item-${id}`, itemSheet(id));
     for (let c = 0; c < 4; c++) addSheet(this, `cell-${c}`, cellSheet(c));
