@@ -1,0 +1,124 @@
+@page {
+  size: A4;
+  margin: 14mm 14mm 12mm;
+}
+
+@media print {
+  :root,
+  :root[data-theme='dark'] {
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #f1f1f1;
+    --text: #111;
+    --muted: #555;
+    --line: #ddd;
+    --accent: #1f3f99;
+    --accent-soft: #eef1fb;
+  }
+
+  body {
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .topbar,
+  .play-card,
+  .footer,
+  .draft-badge,
+  .bullets li.is-draft,
+  .hl-name svg,
+  .job .tags {
+    display: none !important;
+  }
+
+  .classic {
+    max-width: none;
+    padding: 0;
+  }
+  .hero {
+    padding: 0 0 10px;
+  }
+  .name {
+    font-size: 34pt;
+  }
+  .headline {
+    margin-top: 6px;
+    font-size: 12pt;
+  }
+  .tagline {
+    font-size: 10.5pt;
+  }
+  .links {
+    margin-top: 8px;
+  }
+  /* Show URLs in print, since links aren't clickable on paper. */
+  .link-chip {
+    gap: 0;
+    border: 0;
+    padding: 0 16px 0 0;
+  }
+  .link-chip svg {
+    margin-right: 6px;
+  }
+  .link-chip::after {
+    content: ': ' attr(data-print);
+  }
+  .summary {
+    padding: 10px 0 0;
+    font-size: 10.5pt;
+    max-width: none;
+  }
+  .section {
+    padding-top: 12px;
+  }
+  .section-title {
+    margin-bottom: 6px;
+    break-after: avoid;
+  }
+  .job {
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 8px 0;
+    break-inside: avoid;
+  }
+  .job-company {
+    font-size: 17pt;
+  }
+  .bullets {
+    gap: 2px;
+    margin-top: 4px;
+  }
+  .bullets li {
+    font-size: 9.5pt;
+  }
+  .role + .role {
+    margin-top: 8px;
+  }
+  .tags {
+    margin-top: 6px;
+  }
+  .tags li {
+    font-size: 8.5pt;
+    padding: 0 6px;
+  }
+  .split {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+    break-inside: avoid;
+  }
+  .mini-title {
+    font-size: 14pt;
+  }
+  .hl {
+    padding: 4px 0;
+    border: 0;
+  }
+  .skills {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 16px;
+    break-inside: avoid;
+  }
+  a {
+    text-decoration: none;
+  }
+}

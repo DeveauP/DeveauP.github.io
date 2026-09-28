@@ -1,8 +1,8 @@
-.Rproj.user
-.Rhistory
-.RData
+# Node / Vite
+node_modules/
+dist/
+
+# OS
 .DS_Store
-README.html
-*/*.tsv
-*/*.Rmd
-*/*.markdown_github
+Thumbs.db
+Instructions.md
